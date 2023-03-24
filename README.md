@@ -4,7 +4,7 @@ Dog Breeds Chatbot is a friendly program that interprets your personal preferenc
 
 ## Purpose
 
-Our program's purpose is to help users make informed decisions about which dog breeds to choose while looking for a new dog.
+Our program's purpose is to help users make informed decisions about which dog breed to choose while looking for puppy.
 
 Althout this application focuses specifically on dog breeds, the architecture behind Dog Breeds Chatbot may be used to help users navigate any given csv file.
 
