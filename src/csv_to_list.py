@@ -3,7 +3,7 @@ import csv
 
 
 ## fileName should be assigned to the csv file that contains the raw data that will assist our chatbot in making a recommendation
-fileName = './dog_breeds.csv'
+fileName = '../dog_breeds.csv'
 
 
 ## Transform the csv file into a list. Create another list {propertiesArr} with the elements of the header column of {fileName}.
