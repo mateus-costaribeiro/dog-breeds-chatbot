@@ -61,7 +61,7 @@ def chatBot():
             breedsList = combineLists(list, breedsThatMeetConditions(propertiesArr[int(propertyInput) - 1], listOfAttributesObj[int(attributeInput) - 1]))
         
         ## If user has already listed all attributes, congratulate them and finalize the Chatbot.
-        if i == 6:
+        if i == 4:
             congratulations()
             doubleSpace()
             printNumberedList(breedsList)
