@@ -14,8 +14,6 @@ def interjection():
 
 
 def listOfProperties():
-    print('These are the properties that you can choose from:')
-    doubleSpace()
     printNumberedList(propertiesArr)
 
 
@@ -36,7 +34,7 @@ def recommendations():
 
 
 def next():
-    print('Let us move to the next property now. Which of these other dog properties matters most to you?')
+    print('Let us move to the next property now.')
 
 
 def congratulations():
