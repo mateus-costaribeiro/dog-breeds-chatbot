@@ -31,3 +31,29 @@ def findBreedIndex(breed):
     for i in range(0, len(data)):
         allBreedsArr.append(data[i][mainColumn])
     return(allBreedsArr.index(breed))
+
+## Function that takes a string of attributes (eg: ['Loyal, friendly, intelligent']) and returns a list of them (eg: ['Loyal', 'Friendly', 'Intelligent'])
+def split(commaSeparatedString):
+    formatStr = str(commaSeparatedString)
+    commaSeparatedList = formatStr.split(', ')
+    
+    splitList = []
+    for i in range (0, len(commaSeparatedList)):
+        capitalizedElement = str(commaSeparatedList[i]).capitalize()
+        splitList.append(capitalizedElement)
+
+    return(splitList)
+
+## Function takes a list of attributes (eg: ['Loyal, friendly, intelligent', 'Gentle, brave, friendly']) and returns a list without duplicates of all individual attributes in the original list (eg: ['Loyal', 'Friendly', 'Intelligent', 'Brave'...])
+def parseListWithCommaSeparatedElements (attributesList):
+    cleanAttributesList = []
+    for i in range (0, len(attributesList)):
+        listOfSubattributes = split(attributesList[i])
+        
+        for j in range (0, len(listOfSubattributes)):
+            subattribute = listOfSubattributes[j]
+
+            if not cleanAttributesList.__contains__(subattribute):
+                cleanAttributesList.append(subattribute)
+    
+    return(cleanAttributesList)
