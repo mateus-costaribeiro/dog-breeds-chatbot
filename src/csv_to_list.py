@@ -18,5 +18,3 @@ mainColumn = propertiesArr[0]
 
 ## Remove {mainColumn} from the list of properties that the user will input.
 propertiesArr.remove(mainColumn)
-
-print(propertiesArr)
