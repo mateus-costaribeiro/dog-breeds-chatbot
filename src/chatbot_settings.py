@@ -12,7 +12,7 @@ import pyinputplus as pyip
 def chatBot():
     ## Change to not hardcode number 6
     list = []
-    for i in range (0, 7):
+    for i in range (0, 5):
         doubleSpace()
 
         ## If this is the Chatbot's first message, send a greeting message.
